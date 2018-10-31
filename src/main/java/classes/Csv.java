@@ -17,9 +17,9 @@ import org.apache.commons.csv.CSVRecord;
 public class Csv {
     //Laptop 
 //    private final String FILE_PATH = ".\\src\\statueses.csv";
-    private final String FILE_PATH = "D:\\Users\\josmu\\Documents\\statueses.csv";
+//    private final String FILE_PATH = "D:\\Users\\josmu\\Documents\\statueses.csv";
     //Raspberry Pi
-//    private final String FILE_PATH = "/home/pi/Documents/statueses.csv";
+    private final String FILE_PATH = "/home/pi/Documents/statueses.csv";
 
     public List<Statues> statueses;
 
@@ -124,9 +124,7 @@ public class Csv {
         }
 
         Statues lastStatues = statueses.get(statueses.size() - 1);
-        int lastId = lastStatues.id;
-
-        return lastId;
+        return lastStatues.id;
     }
 
     /**
